@@ -1,0 +1,29 @@
+@font-face{
+    font-family: 'iran-yekan';
+    src: url('../farsi-fonts/iran-yekan-400.eot') format('eot'),
+         url('../farsi-fonts/iran-yekan-400.ttf') format('truetype'),
+         url('../farsi-fonts/iran-yekan-400.woff2') format('woff2'),
+         url('../farsi-fonts/iran-yekan-400.woff')format('woff'),
+}
+body{
+    font-family: 'iran-yekan';
+  
+   
+}
+#font-navbar{
+    font-family: 'iran-yekan';
+}
+input[type=text] {
+  
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  direction: rtl;
+  background-color: white;
+  background-image: url('../images/photo_2021-06-05_15-42-44.jpg');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  outline: none;
+}
+input,image:hover{
+cursor: pointer	;
+}
