@@ -11,7 +11,13 @@ button-Alphabetbutton-Alphabetbutton-Alphabetbutton-Alphabet
 body {
   font-family: "iran-yekan";
 }
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
 /* style search  */
 input[type="text"] {
   box-sizing: border-box;
@@ -103,7 +109,9 @@ image:hover {
 }
 
 /* main film */
+
 .cart-film {
+  margin-right: 20px;
   display: flex;
   justify-content: space-around;
 }
@@ -121,4 +129,37 @@ image:hover {
   height: 250px;
 }
 
+/* Latest Movies */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.cart img {
+  width: 50%;
+  border-radius: 5px 5px 0 0;
+}
+
+.cart-content {
+  width: 50%;
+  background: #123abc;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px 24px; */
+  border-radius: 0 0 5px 5px;
+}
+
+.cart-list {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+.tooltip-arrow,
+.red-tooltip + .tooltip > .tooltip-inner {
+  background-color: #f00;
+}
 /* style tooltip */
+
