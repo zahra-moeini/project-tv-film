@@ -17,6 +17,7 @@ body {
   box-sizing: border-box;
   outline: none;
   text-decoration: none;
+  /* direction: rtl; */
 }
 /* style search  */
 input[type="text"] {
@@ -117,7 +118,10 @@ image:hover {
 }
 .main-cart-film {
   margin-top: 20px;
-  background-color: blue;
+  /* background-color: blue; */
+}
+.main-asli p{
+  text-align: center;
 }
 .main-cart-film p {
   color: rgb(0, 0, 0);
@@ -157,9 +161,108 @@ image:hover {
   grid-template-columns: auto auto auto auto;
   gap: 30px;
 }
+/* style tooltip */
 .tooltip-arrow,
 .red-tooltip + .tooltip > .tooltip-inner {
   background-color: #f00;
 }
-/* style tooltip */
+.back {
+  background-color: rgb(255, 0, 157);
+  text-align: center;
+  margin-top: -1px;
+  width: 150px;
+}
 
+/* akharin ghasmatha */
+.back-1{
+  background-color: red;
+  width:150px ;
+}
+
+/* footear */
+#style-footer{
+
+  background-color: rgb(106, 0, 133);
+ 
+}
+.prent-footer-img-button{
+  display: flex;
+ justify-content: space-between;
+}
+.button-footer{
+
+  width: 300px;
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+  
+}
+.button-footer .btn{
+  background-color: rgb(155, 84, 149);
+ height: 40px;
+
+}
+
+
+.button-footer .btn:hover{
+  background-color: rgb(221, 221, 3);
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'iran-yekan';
+}
+
+/* hovar images */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 400px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: .5rem;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: .5rem;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    border-radius: .5rem;
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }

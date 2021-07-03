@@ -1,29 +1,18 @@
 <!DOCTYPE html>
-
 <html lang="ar" dir="rtl">
-
 <head>
     <!-- meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- title -->
-    <title>Document</title>
-    <!-- link boot strap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.rtl.min.css"
-        integrity="sha384-LPvXVVAlyPoBSGkX8UddpctDks+1P4HG8MhT7/YwqHtJ40bstjzCqjj+VVVDhsCo" crossorigin="anonymous">
-    <!-- style css -->
+    <title>project-film</title>
+    <link rel="stylesheet" href="./boostrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./font/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="./font/all.min.css">
-
-
 </head>
 <body>
-
 <!-- nav bar -->
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c014b" id="font-navbar">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3c014b;" id="font-navbar">
     <div class="container-fluid">
         <!-- button respansive navber -->
         <a class="navbar-brand" href="#"><img src="./images/toroplay-logo.svg"></a>
@@ -32,7 +21,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#" style="color: #ffffff">خانه</a>
                 </li>
@@ -72,7 +61,7 @@
                     </ul>
             </ul>
             <!-- search -->
-        <form class="d-flex" id="input">
+        <form class="d-flex me-auto" id="input">
             <input class="form-control me-2" type="text" placeholder="جست و جو..." aria-label="Search">
 
         </form>
@@ -209,146 +198,350 @@
         </div>
         
         <!--  Original movie When you hover, the movie description comes -->
-        <div class="main-cart-film">
-            <p>آخرین فیلم ها </p>
-            <div class="cart-film" id="style-card-film">
-                            <div class=" row row-cols-1 row-cols-sm-2  row-cols-lg-6 g-2 g-lg-3 ">  
-                                <div class="icon" style="width: 10rem;">
-                                    <img src="./images/19634.jpg"   class="card-img-top" alt="..."  data-toggle="tooltip" data-placement="bottom" title="dkjd" data-original-title="Tooltip on bottom" class="red-tooltip"> 
-                                    <p>jdhkj</p>
+    <div class="b-example-divider"></div>
+    <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">سریال انیمیشن</h2>
+    
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                        style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill" />
+                                                    </svg>
+                                                    <small>Earth</small>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3" />
+                                                    </svg>
+                                                    <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/93567.jpg" class="card-img-top" alt="..." id="img-tooltip" data-toggle="tooltip" data-placement="right" title="Tooltip for image imag imag imag" data-animation="false" data-trigger="manual" >
-                                    <p>xcxc</p>
+                                <div class="flip-box-back">
+                                    <h2>نام فیلم: Example</h2>
+                                    <p>34,000</p>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/9453.jpg" class="card-img-top" alt="...">
-                                    <p>jh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                        style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill" />
+                                                    </svg>
+                                                    <small>Earth</small>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3" />
+                                                    </svg>
+                                                    <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95052.jpg" class="card-img-top" alt="...">
-                                    <p>sgd</p>
+                                <div class="flip-box-back">
+                                    <h2>نام فیلم: Example</h2>
+                                    <p>34,000</p>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95454.jpg" class="card-img-top" alt="...">
-                                    <p>hsd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                        style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill" />
+                                                    </svg>
+                                                    <small>Earth</small>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3" />
+                                                    </svg>
+                                                    <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/97156.jpg" class="card-img-top" alt="...">
-                                    <p>nb</p>
+                                <div class="flip-box-back">
+                                    <h2>نام فیلم: Example</h2>
+                                    <p>34,000</p>
                                 </div>
-                                
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/93857.jpg" class="card-img-top" alt="...">
-                                    <p>nb</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                        style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                            <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                            <ul class="d-flex list-unstyled mt-auto">
+                                                <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                                <li class="d-flex align-items-center me-3">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#geo-fill" />
+                                                    </svg>
+                                                    <small>Earth</small>
+                                                </li>
+                                                <li class="d-flex align-items-center">
+                                                    <svg class="bi me-2" width="1em" height="1em">
+                                                        <use xlink:href="#calendar3" />
+                                                    </svg>
+                                                    <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>nb</p>
+                                <div class="flip-box-back">
+                                    <h2>نام فیلم: Example</h2>
+                                    <p>34,000</p>
                                 </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>jkxhg</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>sjkdh</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>dksh</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>lkjchg</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>jh</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>ksh</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>ksh</p>
-                                </div>
-                                <div class="" style="width: 10rem;">
-                                    <img src="./images/95701.jpg" class="card-img-top" alt="...">
-                                    <p>ksh</p>
-                                </div>
-                            </div>   
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-<!-- Latest Movies -->
+            
+    
+            
 
-    <div class="cart-list">
-      
-        <div class="cart">
-            <img src="https://www.film2serial.ir/wp-content/uploads/2021/03/MV5BZDRmNDZlZTUtOTQwOS00NTAwLTg5OTktNzIzZjQ2OTk5NGU2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                alt="Scon" class="cart-cover" />
-            <div class="cart-content">
-                <span>فصل 1</span>
+    </div>
+<!-- Latest Movies -->
+<div class="b-example-divider"></div>
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">سریال انیمیشن</h2>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill" />
+                                            </svg>
+                                            <small>Earth</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3" />
+                                            </svg>
+                                            <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>نام فیلم: Example</h2>
+                            <p>34,000</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="cart">
-            <img src="https://www.film2serial.ir/wp-content/uploads/2021/03/MV5BZDRmNDZlZTUtOTQwOS00NTAwLTg5OTktNzIzZjQ2OTk5NGU2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                alt="Scon" class="cart-cover" />
-            <div class="cart-content">
-                <span>فصل 2</span>
+            <div class="col-lg-3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill" />
+                                            </svg>
+                                            <small>Earth</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3" />
+                                            </svg>
+                                            <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>نام فیلم: Example</h2>
+                            <p>34,000</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="cart">
-            <img src="https://www.film2serial.ir/wp-content/uploads/2021/03/MV5BZDRmNDZlZTUtOTQwOS00NTAwLTg5OTktNzIzZjQ2OTk5NGU2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                alt="Scon" class="cart-cover" />
-            <div class="cart-content">
-                <span>فصل 3</span>
+            <div class="col-lg-3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill" />
+                                            </svg>
+                                            <small>Earth</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3" />
+                                            </svg>
+                                            <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>نام فیلم: Example</h2>
+                            <p>34,000</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>   
-        <div class="cart">
-            <img src="https://www.film2serial.ir/wp-content/uploads/2021/03/MV5BZDRmNDZlZTUtOTQwOS00NTAwLTg5OTktNzIzZjQ2OTk5NGU2XkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg"
-                alt="Scon" class="cart-cover" />
-            <div class="cart-content">
-                <span>فصل 3</span>
+            <div class="col-lg-3">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                                style="background-image: url('./images/MV5BMjA1NTc5Njk1MF5BMl5BanBnXkFtZTgwMTQxODExMTE@._V1_SX300.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h2 class="pt-5 mt-10 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <span class="badge rounded-pill bg-warning text-dark">اتمام پخش</span>
+                                        <li class="d-flex align-items-center me-3">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#geo-fill" />
+                                            </svg>
+                                            <small>Earth</small>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <svg class="bi me-2" width="1em" height="1em">
+                                                <use xlink:href="#calendar3" />
+                                            </svg>
+                                            <span class="badge rounded-pill bg-warning text-dark"> 1480p</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-box-back">
+                            <h2>نام فیلم: Example</h2>
+                            <p>34,000</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-            
 
 
-     
 
 
-    
-       
-    
+</div>
     
 
+    <footer class="blog-footer"  id="style-footer">
+        <div class="prent-footer-img-button">
 
-
-    
+            <img src="./images/toroplay-logo.svg">
+            <div class="button-footer">
+                <button type="button" class="btn"><a href="#"><i class="fab fa-twitter" style="color: white;"></i></a></button>
+                <button type="button" class="btn "><a href="#"><i class="fab fa-telegram-plane" style="color: white;"></i></a></button>
+                <button type="button" class="btn "><a href="#"><i class="fab fa-instagram" style="color: white;"></i></a></button>
+                <button type="button" class="btn"><a href="#"><i class="fab fa-youtube" style="color: white;"></i></a></button>
+                <button type="button" class="btn"><a href="#input"><i class="fas fa-arrow-up" style="color: white;"></i></a></button>
+            </div>
+        </div>
+           
+        <div class="px-3 py-2  text-white" style="background-color: #3c014b">
+         <div class="container">
+            <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small"> 
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                            <use xlink:href="#home" />
+                        </svg>
+                        انیمیشن
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                            <use xlink:href="#speedometer2" />
+                        </svg>
+                        اکشن
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                            <use xlink:href="#table" />
+                        </svg>
+                        اکشن و ماجراجویی
+                    </a>
+                </li>
                 
-
+            </ul>
+        </div>
+    </div>
+</div>
+    </footer>
     <!-- link style java script tooltip -->
-    <script src="./script.js"></script>
     <!-- Font Awesome js  -->
     <script src="./font/all.min.js"></script>
-    <!--  link bootstrap js  -->
-    <script src="./bootstrap-5.0.0-beta2-dist/bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-    crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-    crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="./boostrap/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
