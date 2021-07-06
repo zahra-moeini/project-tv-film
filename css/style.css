@@ -91,6 +91,7 @@ image:hover {
 .main-slider-list-group {
   margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -98,8 +99,13 @@ image:hover {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 30px;
-  background-color: yellow;
+  /* background-color: yellow; */
+  margin-bottom: 20px;
+}
+.boreder-Suggested-videos {
+  border: 1px solid rgb(7, 6, 6);
+  border-radius: 20px;
+  margin-top: 20px;
 }
 
 .Suggested-videos img {
@@ -120,7 +126,7 @@ image:hover {
   margin-top: 20px;
   /* background-color: blue; */
 }
-.main-asli p{
+.main-asli p {
   text-align: center;
 }
 .main-cart-film p {
@@ -174,95 +180,259 @@ image:hover {
 }
 
 /* akharin ghasmatha */
-.back-1{
+.back-1 {
   background-color: red;
-  width:150px ;
+  width: 150px;
 }
 
 /* footear */
-#style-footer{
-
+#style-footer {
   background-color: rgb(106, 0, 133);
- 
 }
-.prent-footer-img-button{
+.prent-footer-img-button {
   display: flex;
- justify-content: space-between;
+  justify-content: space-between;
 }
-.button-footer{
-
+.button-footer {
   width: 300px;
   display: flex;
- justify-content: space-between;
- align-items: center;
-  
+  justify-content: space-between;
+  align-items: center;
 }
-.button-footer .btn{
+.button-footer .btn {
   background-color: rgb(155, 84, 149);
- height: 40px;
-
+  height: 40px;
 }
 
-
-.button-footer .btn:hover{
+.button-footer .btn:hover {
   background-color: rgb(221, 221, 3);
 }
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family:'iran-yekan';
+  font-family: "iran-yekan";
 }
 
 /* hovar images */
 .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 400px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    border-radius: .5rem;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    border-radius: .5rem;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
-    border-radius: .5rem;
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  border-radius: 0.5rem;
+}
 
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 0.5rem;
+}
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+  border-radius: 0.5rem;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* single-move */
+.main-single-move {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.single-move {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-image: url(../images/MV5BMTg2MjM1MTA3NF5BMl5BanBnXkFtZTgwNjIyMzI3MTE@._V1_SX300.jpg);
+  width: 70%;
+}
+.single-move p {
+  color: white;
+}
+.single-move img {
+  opacity: 500px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 250px;
+  height: 300px;
+}
+.button-single-move {
+  padding-bottom: 20px;
+}
+hr {
+  margin-top: 50px;
+}
+.icon-icon-single-move {
+  width: 200px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* akharin-bazdid  and Most viewers of the movie*/
+
+.akharin-bazdid {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(46, 44, 44);
+  box-shadow: 3px #333030;
+  width: 400px;
+  height: 350px;
+}
+.akharin-bazdid-p {
+  margin-right: 10px;
+}
+
+/* Information about the description of the actors and the videos  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  direction: rtl;
+}
+.tabs {
+  width: 70%;
+  height: 480px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+}
+.tabs .tab-body {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow: hidden;
+  background-image: url(../images/MV5BMTg2MjM1MTA3NF5BMl5BanBnXkFtZTgwNjIyMzI3MTE@._V1_SX300.jpg);
+}
+.tabs .tab-body > div {
+  position: absolute;
+  padding: 20px;
+  top: -100%;
+  opacity: 0;
+  transform: scale(0.85);
+  transition: top 0ms ease-in-out 100ms transform 200ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms;
+}
+.tabs .tab-body > div.active {
+  opacity: 1;
+  transform: scale(1);
+  top: 10px;
+  transition: top 0ms ease-in-out 0ms, transform 200ms ease-in-out 0ms,
+    opacity 200ms ease-in-out 0ms;
+}
+.tabs .tab-body h1 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.tabs .tab-body p {
+  color: rgb(255, 255, 255);
+  margin: 10px 0px;
+  font-size: 15px;
+}
+.tabs .tab-heder {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid #ddd;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+}
+.tabs .tab-heder > div {
+  width: 5%;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  margin: 10px;
+}
+.tabs .tab-heder > div:before {
+  content: "";
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background: #5d84da;
+  /* z-index:1 ; */
+  transition: all 200ms ease-in-out;
+}
+.tabs .tab-heder > div i {
+  color: rgb(17, 15, 15);
+  font-size: 16px;
+}
+.tabs .tab-heder > div span {
+  font-size: 10px;
+  display: block;
+  margin-top: 2px;
+  color: #555;
+  font-weight: 600;
+}
+.active :hover{
+  color: black;
+}
+.tabs .tab-heder > div.active:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.tabs .tab-heder > div.active i,
+.tabs .tab-heder > div.active span {
+  position: relative;
+  /* z-index: 2; */
+  color: #000000;
+}
+.list-active li{
+  color: white;
+  list-style: none;
+}
+.imag-baz img{
+    border-radius: 100px;
+    width: 130px;
+    height: 130px;
+}
+/*  didkhah  */
+.container-did{
+  margin-top: 40px;
+  margin-bottom:40px;
+}
