@@ -68,6 +68,7 @@ image:hover {
 }
 
 /* sliders   and list group*/
+
 #list-group {
   width: 25%;
 }
@@ -168,10 +169,7 @@ image:hover {
   gap: 30px;
 }
 /* style tooltip */
-.tooltip-arrow,
-.red-tooltip + .tooltip > .tooltip-inner {
-  background-color: #f00;
-}
+
 .back {
   background-color: rgb(255, 0, 157);
   text-align: center;
@@ -181,7 +179,7 @@ image:hover {
 
 /* akharin ghasmatha */
 .back-1 {
-  background-color: red;
+  /* background-color: red; */
   width: 150px;
 }
 
@@ -257,6 +255,11 @@ image:hover {
 }
 
 /* Style the back side */
+.icon-cart-film{
+
+  margin-right: -44px;
+}
+
 .flip-box-back {
   background-color: dodgerblue;
   color: white;
