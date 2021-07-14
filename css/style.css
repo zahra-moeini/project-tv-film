@@ -434,7 +434,7 @@ body {
     width: 130px;
     height: 130px;
 }
-/*  didkhah  */
+
 .container-did{
   margin-top: 40px;
   margin-bottom:40px;
@@ -447,4 +447,52 @@ body {
       height: 26px;
       text-align: center;
     background-color: #ffc107!important;
+}
+
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}
+
+#tooltip[data-show] {
+  opacity: 1;
+  margin-top: 2px !important;
+}
+
+
+.tooltip-inner {
+  background: #123abc;
+}
+
+.tooltip-arrow::before {
+  border-bottom-color: #123abc !important;
 }
