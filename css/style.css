@@ -449,6 +449,7 @@ body {
     background-color: #ffc107!important;
 }
 
+<<<<<<< HEAD
 /* style toltip */
 .flip-box #toltip{
     position: absolute;
@@ -489,4 +490,52 @@ body {
 }
 .flip-box:hover #toltip {
   opacity: 1;
+=======
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^="top"] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^="bottom"] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^="left"] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^="right"] > #arrow {
+  left: -4px;
+}
+
+#tooltip[data-show] {
+  opacity: 1;
+  margin-top: 2px !important;
+}
+
+
+.tooltip-inner {
+  background: #123abc;
+}
+
+.tooltip-arrow::before {
+  border-bottom-color: #123abc !important;
+>>>>>>> 9bf1700b09eb87dc6d12cfec14089dca0bf53c25
 }
